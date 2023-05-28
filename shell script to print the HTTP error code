@@ -1,0 +1,12 @@
+#Create a shell script to print the HTTP error code of guvi.in & print, the success/failure message based on the error code response 
+
+#!/bin/bash
+
+status_code=$(curl -s -o /dev/null -I -w "%{http_code}" https://www.guvi.in/)
+
+if [ "$status_code" -ne "200" ]
+then
+        echo "$status_code is down please check"
+else
+        echo "$status_code is reachable"
+fi
