@@ -1,0 +1,15 @@
+There are two looping statements,
+
+For loop statement
+Syntax: 
+for <var> in <value1;value2;value3..>
+do
+    <commands>
+done
+
+While loop statement
+Syntax:
+while <condition>
+do
+    <commands>
+done
