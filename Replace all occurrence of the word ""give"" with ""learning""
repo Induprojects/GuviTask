@@ -1,0 +1,10 @@
+#/bin/bash
+
+x=5
+if [ $x -gt 0 ]
+then
+        sed -i '5,${/welcome/s/give/learning/g;}' file1.txt
+        echo "changes done"
+else
+        echo "no changes"
+fi
